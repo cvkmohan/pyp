@@ -1,0 +1,314 @@
+#clickToFlip {
+font-size:14pt;
+font-style:italic;
+position:absolute;
+bottom:23px;
+right:40px;
+font-weight:100;
+}
+
+.linedCard {
+background:url(/assets/line_big.png);
+}
+
+.linedCardSmall {
+background:url(/assets/line_small.png);
+}
+
+.cardPile {
+box-shadow:0 0 9px #919191;
+height:129px;
+width:160px;
+font-size:18pt;
+overflow:hidden;
+display:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+#fc_container {
+position:relative;
+width:840px;
+height:400px;
+background-color:#f5f5f5;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+user-select:none;
+margin:25px auto 14px;
+}
+
+.cardBox_right {
+border:1px solid #000;
+color:#fff;
+height:40px;
+width:40px;
+border-radius:100%;
+z-index:20;
+position:absolute;
+cursor:pointer;
+line-height:38px;
+text-transform:capitalize;
+}
+
+#tipBoxWrapper {
+position:absolute;
+top:420px;
+left:10px;
+width:100%;
+display:none;
+}
+
+#tipBox {
+width:500px;
+margin-right:auto;
+margin-left:auto;
+text-align:center;
+color:#363;
+}
+
+#correctCards {
+position:absolute;
+top:20px;
+left:20px;
+z-index:2;
+cursor:pointer;
+}
+
+#incorrectCards {
+position:absolute;
+top:212px;
+left:20px;
+z-index:3;
+cursor:pointer;
+}
+
+#remainingCards {
+position:absolute;
+left:660px;
+top:22px!important;
+z-index:2;
+cursor:pointer;
+}
+
+.cardBox {
+border:1px solid #000;
+height:60px;
+width:128px;
+z-index:20;
+position:absolute;
+cursor:pointer;
+line-height:56px;
+text-transform:capitalize;
+}
+
+#remainingBox {
+left:718px;
+top:127px;
+background-color:#2c3e50;
+border:2px solid #000;
+text-align:center;
+}
+
+#correctBox {
+top:90px;
+left:20px;
+background-color:#90EE90;
+border:2px solid #000;
+color:#FFF;
+text-align:center;
+font-weight:700;
+}
+
+#incorrectBox {
+top:282px;
+left:20px;
+background-color:#E14545;
+border:2px solid #000;
+color:#FFF;
+text-align:center;
+font-weight:700;
+}
+
+.cardCount {
+font-size:12pt;
+font-family:Arial, sans-serif;
+width:176px;
+text-align:center;
+z-index:20;
+text-transform:capitalize;
+cursor:pointer;
+}
+
+.hintMessage {
+font-size:10pt;
+font-family:Arial, sans-serif;
+color:#ccc;
+z-index:1;
+}
+
+.action {
+font-size:10pt;
+font-family:Arial, sans-serif;
+color:#88f;
+z-index:1;
+cursor:pointer;
+}
+
+.action:hover {
+text-decoration:underline;
+}
+
+#retryLink {
+position:absolute;
+left:688px;
+top:290px;
+width:100px;
+text-align:center;
+}
+
+#helpLink {
+position:absolute;
+top:5px;
+right:37px;
+}
+
+#restartLink {
+position:absolute;
+right:58px;
+width:90px;
+top:239px;
+text-align:center;
+}
+
+#shuffleLink {
+position:absolute;
+left:688px;
+top:192px;
+width:100px;
+text-align:center;
+}
+
+#reverseOrder {
+position:absolute;
+bottom:-30px;
+left:240px;
+font-size:12px;
+width:380px;
+text-align:center;
+}
+
+#reverseOrderCheckBox {
+position:relative;
+top:2px;
+}
+
+#pause {
+position:absolute;
+bottom:-40px;
+right:10px;
+width:70px;
+}
+
+#timerArea {
+position:absolute;
+bottom:-37px;
+right:86px;
+}
+
+#currentCard {
+position:absolute;
+height:322px;
+width:400px;
+top:20px;
+left:228px;
+box-shadow:0 0 12px #919191;
+margin-left:auto;
+margin-right:auto;
+background-color:#FFF;
+font-size:62pt;
+display:none;
+z-index:4;
+overflow:hidden;
+cursor:pointer;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+#currentCard:active {
+box-shadow:0 0 9px #919191;
+}
+
+#currentCard table {
+height:74%;
+text-align:center;
+overflow:visible;
+margin:0;
+padding:0;
+}
+
+.cardPile table {
+height:74%;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+.cardPile td {
+text-align:center;
+width:154px;
+}
+
+#currentCard td {
+text-align:center;
+width:395px;
+}
+
+#infoCard {
+position:absolute;
+height:326px;
+width:406px;
+top:10px;
+left:216px;
+border:2px solid #000;
+display:none;
+z-index:20;
+cursor:pointer;
+vertical-align:middle;
+}
+
+#infoCardContent {
+vertical-align:middle;
+}
+
+.cardPile:active {
+box-shadow:0 0 6px #919191;
+}
+
+#correctBox:active {
+background-color:#292;
+}
+
+#incorrectBox:active {
+background-color:red;
+}
+
+#remainingBox:active {
+background-color:#ff7;
+}
+
+#currentCard h2,.cardPile h2 {
+font-size:24%;
+color:#ccc;
+font-weight:400;
+height:6%;
+margin:0;
+padding:0;
+}

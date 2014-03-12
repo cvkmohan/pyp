@@ -1,0 +1,129 @@
+{
+  "branch": {
+    "id": "1",
+    "name": "Introduction to Ruby"
+  },
+  "leafs": [
+    {
+      "id": "1",
+      "leaf_type": "video",
+      "name": "Video 2",
+      "title":"Creating a user account",
+      "path": "/captionbox/create_account.html",
+      "video_length": "",
+      "arabic": "/captionbox/create_account_arabic.html", 
+      "align": "left"
+    },
+    {
+      "id": "2",
+      "leaf_type": "question",
+      "name": "Knowledge check 1",
+      "question_type": "fb",
+      "q": "Question: Which of the following is not possible when a user is logged in as a standard user?",
+      "correct": "2",
+      "correct_option": "Change the account password of another user",
+      "options": 
+          {
+              "1": "Change the background image on the desktop",
+              "2": "Change the account password of another user",
+              "3": "Change the account picture of own account",
+              "4": "Play music from the hard disk"
+          },
+      "words":"password",
+      "button_success": "Skip over to next challenge",
+      "button_error": "Watch video on setting a password for an account",
+      "image_preview": "/images/Q1.svg"
+    },
+    {
+      "id": "3",
+      "leaf_type": "video",
+      "name": "Video 1",
+      "title": "Creating a password for an account",
+      "path": "/captionbox/create_password.html",
+      "arabic": "/captionbox/create_password_arabic.html", 
+      "video_length": "",
+      "align": "left"
+    },
+    {
+      "id": "4",
+      "leaf_type": "question",
+      "name": "Knowledge check 2",
+      "question_type": "fb",
+      "q": "How can Abbas's dad allow Abbas to use his laptop and yet ensure his work is not lost?",
+      "correct": "By creating a standard account for Abbas",
+      "words": "create account",
+      "button_success": "Skip over to next challenge",
+      "button_error": "Watch video on creating a new account",
+      "image_preview": "/images/Q2.svg"
+    },
+    {
+      "id": "5",
+      "leaf_type": "video",
+      "name": "Video 2",
+      "title":"Creating a user account",
+      "path": "/captionbox/create_account.html",
+      "video_length": "",
+      "arabic": "/captionbox/create_account_arabic.html", 
+      "align": "left"
+    },
+    {
+      "id": "6",
+      "leaf_type": "question",
+      "name": "Knowledge check 3",
+      "question_type": "fb",
+      "q": "How can Abbas's dad control what Abbad gets access to on Windows 7?",
+      "correct": "By using parental controls",
+      "words": "parental control",
+      "button_success": "Skip over to next challenge",
+      "button_error": "Watch video on Parental controls",
+      "image_preview": "/images/Q3.svg"
+    },
+    {
+      "id": "7",
+      "leaf_type": "video",
+      "name": "Video 3",
+      "title": "Parental Controls",
+      "path": "/videos/Parental_Control_new/Parental_Control.html",
+      "video_length": "ds",
+      "arabic":"",
+      "align": "right"
+    },
+    {
+      "id": "8",
+      "leaf_type": "simulation",
+      "name": "Challenge 1",
+      "path": "/simulation/s2/index.html",
+      "video_length": "",
+      "width": "500",
+      "height": "360",
+      "question": "Create a Standard Windows 7 account for Abbas and use the football picture (because Abbas is a big fan of football). Also set a password for Abbas's account."
+    },
+    {
+      "id": "9",
+      "leaf_type": "simulation",
+      "name": "Challenge 2",
+      "path": "/simulation/s1.html",
+      "video_length": "",
+      "width": "870",
+      "height": "370",
+      "question": "Set time limit for Abbas to use his dad's laptop as 5 AM to 8 AM from Monday to Wednesday."
+    },
+    {
+      "id": "10",
+      "leaf_type": "flashcard",
+      "name": "Flashcards",
+      "cards": [
+          {
+              "q": "Planet Earth",
+              "a": "Planet Earth"
+          }
+      ]
+    },
+    {
+      "id": "11",
+      "leaf_type": "html",
+      "name": "Think It Over",
+      "content": ""
+    }
+  ]
+}

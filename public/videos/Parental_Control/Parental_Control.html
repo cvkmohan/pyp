@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parental Control</title>
+
+<script src="./script/ease.js"></script>
+<script src="./script/tween.js"></script>
+<script src="./script/movieclip.js"></script>
+<script src="./script/preloader.js"></script>
+<script src="./script/sound.js"></script>
+<script src="./script/Parental Control.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/_1.jpg", id:"_1"},
+		{src:"images/sc1.png", id:"sc1"},
+		{src:"images/sc10.png", id:"sc10"},
+		{src:"images/sc11.png", id:"sc11"},
+		{src:"images/sc12.png", id:"sc12"},
+		{src:"images/sc13.png", id:"sc13"},
+		{src:"images/sc14.png", id:"sc14"},
+		{src:"images/sc15.png", id:"sc15"},
+		{src:"images/sc16.png", id:"sc16"},
+		{src:"images/sc17.png", id:"sc17"},
+		{src:"images/sc18.png", id:"sc18"},
+		{src:"images/sc2.png", id:"sc2"},
+		{src:"images/sc3.png", id:"sc3"},
+		{src:"images/sc4.png", id:"sc4"},
+		{src:"images/sc5.png", id:"sc5"},
+		{src:"images/sc6.png", id:"sc6"},
+		{src:"images/sc7.png", id:"sc7"},
+		{src:"images/sc8.png", id:"sc8"},
+		{src:"images/sc81.png", id:"sc81"},
+		{src:"images/sc9.png", id:"sc9"},
+		{src:"sounds/a1wav.mp3", id:"a1wav"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.installPlugin(createjs.Sound);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.ParentalControl();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(25);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+function playSound(id, loop) {
+	createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="800" height="600" style="background-color:#ffffff"></canvas>
+</body>
+</html>

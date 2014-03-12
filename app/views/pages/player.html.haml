@@ -1,0 +1,84 @@
+= stylesheet_link_tag 'bootstrap-combined.min'
+= stylesheet_link_tag 'scrollbar/perfect-scrollbar'
+= stylesheet_link_tag 'grey'
+= stylesheet_link_tag 'play_nav'
+= javascript_include_tag 'jquery-2.1.0.min'
+= javascript_include_tag 'jquery.stellar.min'
+= javascript_include_tag 'greycampus'
+.row
+  .col-xs-12.col-md-12 
+    .panel.panel-info
+      %ol.breadcrumb
+        %li
+          %a{href: "/"} 
+            Maintaining Windows 7
+        %li.active
+          Creating new user accounts
+        %span#lang_bar{style: "float:right"}
+          %select#lang{style: "width: 200px;"}
+            %option{value: 'english'} English
+            %option{value: 'arabic'} Arabic
+      .row
+        .col-md-12
+          .wizard#sub_nav
+      .row{style: "margin: 5px;"}
+        .col-md-12#player
+            
+      .panel-footer
+        .row
+          .col-md-12.text-right
+            %a.btn.btn-primary#next_p_v{style: "display:none"} Previous
+            %a.btn.btn-primary#next_p Move on to next challenge
+  / .col-xs-6.col-md-4
+  /   .panel.panel-info#sidebar
+  /     .panel-heading
+  /       %h3.panel-title 
+  /         Summary
+  /     .panel-body
+  /       %i.fa.fa-leaf.fa-3x.icon-green
+  /       %i.fa.fa-leaf.fa-3x.icon-green
+  /       %i.fa.fa-leaf.fa-3x
+  /       %i.fa.fa-leaf.fa-3x
+  /     .panel-body
+  /       = render('pages/toc')
+
+:css
+    #player {
+       min-height:400px;
+    }
+  #tree_scroll {
+    height:350px;
+    width: 340px;
+    overflow: hidden;
+    position: relative;
+  }
+  .autumn {
+      background-image: url(/images/bg.png);
+    }
+  .photo {
+      background-attachment: fixed;
+      background-position: 50% 0;
+      //background-repeat: no-repeat;
+      //height: 450px;
+      position: relative;
+    }
+    #sidebar {
+      position: fixed;
+    }
+    .page-header{
+      margin: 13px 0 0 !important;
+    }  
+  / .breadcrumb > li + li:before {
+  /   color: #CCCCCC !important;
+  /   content: "" !important;
+  /   padding: 0 3px !important;
+  / }
+
+:javascript
+  var playerObj = new Player({ 
+    total : '11', 
+    content_types: ['video', 'question','video', 'question','video', 'question','video','simulation', 'simulation', 'flashcards', 'info'],
+    leaf_title: ['How it began', 'Knowledge check 1','Video 1', 'Knowledge check 2','Video 2', 'Knowledge check 3','Video 3','Challenge 1', 'Challenge 2', 'Flashcards', 'Think It Over'], 
+  });
+  playerObj.nextLeaf(0);
+

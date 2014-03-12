@@ -1,0 +1,170 @@
+a {
+    color: #0C92BF;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #075B77;
+    text-decoration: underline;
+}
+a:focus {
+    outline: thin dotted #333333;
+    outline-offset: -2px;
+}
+
+ul, ol {
+    margin-bottom: 11.5px;
+    margin-top: 0;
+}
+ul ul, ol ul, ul ol, ol ol {
+    margin-bottom: 0;
+}
+
+.subway-nav {
+    display: table;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}
+.subway-nav .subway-nav-station {
+    background-color: #E6E6E6;
+    border-bottom: 1px solid #FFFFFF;
+    border-collapse: collapse;
+    border-right: 1px solid #FFFFFF;
+    display: table-cell;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    transition: background-color 0.1s linear 0s;
+}
+.subway-nav .subway-nav-station > span {
+    display: block;
+    position: relative;
+}
+.subway-nav .subway-nav-station > span > a:hover {
+    text-decoration: none;
+}
+.subway-nav .subway-nav-station .subway-nav-video {
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor:pointer;
+}
+.subway-nav .subway-nav-station .subway-nav-station-content {
+    background-color: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    color: #303030;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    line-height: 1.7;
+    margin-left: -21px;
+    padding: 5px;
+    position: absolute;
+    top: 25px;
+    width: 150px;
+    z-index: 100;
+}
+.subway-nav .subway-nav-station .subway-nav-station-content:before, .subway-nav .subway-nav-station .subway-nav-station-content:after {
+    border: 10px solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 0;
+}
+.subway-nav .subway-nav-station .subway-nav-station-content:before, .subway-nav .subway-nav-station .subway-nav-station-content:after {
+    border-bottom: 10px solid #DCDCDC;
+    border-top: 0 none;
+    left: 10px;
+    top: -10px;
+}
+.subway-nav .subway-nav-station .subway-nav-station-content:after {
+    border-bottom-color: #FFFFFF;
+    top: -9px;
+}
+.subway-nav .subway-nav-station .subway-nav-quiz {
+    color: #FFFFFF;
+    font-size: 20px;
+    max-width: 95%;
+    position: absolute;
+    right: 5%;
+    text-align: right;
+    top: 0;
+}
+.subway-nav .subway-nav-station.is-viewed {
+    background-color: #9CC2D2;
+}
+.subway-nav .subway-nav-station.is-viewed .subway-nav-quiz.is-complete {
+    color: #6599BA;
+}
+.subway-nav .subway-nav-station.is-current {
+    background-color: #DE8B3E;
+    transition: background-color 0.2s linear 0s;
+}
+.subway-nav .subway-nav-station.is-current .subway-nav-quiz.is-complete {
+    color: #B1651E;
+}
+.subway-nav .subway-nav-station.is-current:hover {
+    background-color: #6599BA;
+}
+.subway-nav .subway-nav-station.is-current:hover .subway-nav-quiz.is-complete {
+    color: #9CC2D2;
+}
+.subway-nav .subway-nav-station:hover {
+    background-color: #6599BA;
+}
+.subway-nav .subway-nav-station:hover .subway-nav-station-content {
+    display: block;
+}
+.subway-nav .subway-nav-station:hover .subway-nav-quiz.is-complete {
+    color: #9CC2D2;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: rgba(255, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+}
+
+.icon-color{
+    color: #f38d1e;
+}
+
+.icon-color-white{
+    color: white;
+}
+
+.btn-primary{
+    background-color: #1c2172 !important;
+    border-color: #1c2172 !important;
+    color: #FFFFFF !important;
+}
+.btn-info{
+    background-color: #f38d1e !important;
+    border-color: #f38d1e !important;
+    color: #FFFFFF !important;
+}
+
+.bs-callout-info {
+    background-color: #F4F8FA;
+    border-color: #5BC0DE;
+}
+.bs-callout-info h4 {
+    color: #5BC0DE;
+}
+
+.list-group {
+    font-size: 13px !important;
+    font-weight: 300;
+}

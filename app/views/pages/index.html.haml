@@ -1,0 +1,14 @@
+- if !current_user.nil?
+  = javascript_include_tag 'jquery-2.1.0.min'
+  = stylesheet_link_tag 'bootstrap-combined.min'
+  .row
+    .col-xs
+      .panel.panel-info
+        .panel-heading
+          %h3.panel-title 
+            Managing User Accounts
+        .panel-body#home
+          %embed{src: "/images/Index.svg", width: "100%"}
+        
+          
+         

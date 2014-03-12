@@ -1,0 +1,12 @@
+- if(@status == 'true')
+  .alert.alert-success
+    %strong Well done!
+    You got it right.
+- else
+  .alert.alert-danger
+    %strong Sorry!
+    That is not correct.
+  .alert.alert-info
+    %strong Answer: 
+    = "#{@leaf_data['correct']}"   
+

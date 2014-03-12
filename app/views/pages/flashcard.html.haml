@@ -1,0 +1,92 @@
+%input#c_type{:type => 'hidden', :value => "flashcards"}
+= javascript_include_tag 'jquery-2.1.0.min'
+= javascript_include_tag 'fc_new/utils'
+= javascript_include_tag 'fc_new/newflashcards'
+= stylesheet_link_tag 'fc_new/flashcards'
+%input#c_type{:type => 'hidden', :value => "flashcards"}
+.col-md-11
+  %center{style: "margin: 10px;"}
+  #fc_container
+    #incorrectBox.cardBox.btn-danger{onclick: "doAction( MOVE_TO_INCORRECT )"} I got it wrong (0)
+    #correctBox.cardBox.btn-success{onclick: "doAction( MOVE_TO_CORRECT )"} I got it correct (0)
+    #remainingBox.cardBox_right{onclick: "doAction( MOVE_TO_REMAINING )"} remaining cards ({{ (isset($loData->fcCnt))?($loData->fcCnt-1):0; }})
+    #correctCards.cardPile.linedCardSmall{onclick: "doAction( UNDO_CORRECT )", style: "display: block; background-color: rgb(255, 255, 255);"}
+      %h2 Question
+      %table
+        %tbody
+          %tr
+            %td{style: "font-size:50%"}
+      #clickToFlip{style: "color: rgb(195,195,195)"}
+    #incorrectCards.cardPile{onclick: "doAction( UNDO_INCORRECT )", style: "display: none;"}
+    #remainingCards.cardPile.linedCardSmall{onclick: "doAction( MOVE_TO_REMAINING )", style: "display: block; left: 660px; top: 100px; background-color: rgb(255, 255, 255);"}
+      %h2 Question
+      %table
+        %tbody
+          %tr
+            %td{style: "font-size:50%"}
+      #clickToFlip{style: "color: rgb(195,195,195)"}
+    #currentCard.linedCard{onclick: "doAction( FLIP_CARD )", style: "z-index: 5; top: 20px; left: 228px; height: 322px; width: 400px; background-color: rgb(255, 255, 255); display: block;"}
+      %h2 Question
+      %table
+        %tbody
+          %tr
+            %td{style: "font-size:40%"}
+      #clickToFlip{style: "color: rgb(195,195,195)"}
+    /
+      <div id="retryLink" class="action" onclick="doAction( RETRY )" title="Retry the incorrect cards"><button class="btn btn-blue"><i class="icon-redo"></i> Home</button>
+      </div>
+    #reverseOrder
+    #shuffleLink.action{onclick: "doAction( SHUFFLE )", title: "Shuffle the cards"}
+      %button.btn.btn-blue
+        %i.icon-shuffle>
+        Shuffle
+    #restartLink.action{onclick: "doAction( START_OVER )", title: "Play Again"}
+      %button.btn.btn-blue
+        %i.icon-spinner-5
+        Replay
+    %table#infoCard.infoMessage{onclick: "doAction( CLOSE_HELP )", title: "click to hide"}
+      %tbody
+        %tr{style: "height: 326px;  "}
+          %td#infoCardContent
+  %div{style: "display:none"}
+    #flashcardHelp{style: "font-size: 30pt;"}
+      To flip the current card, click it! 
+      To move the current card to one of the three colored boxes, click on the box. 
+      You may also click on the card displayed in any of the three boxes to bring that card back to the
+      center.
+    #congratsInfo
+      %div
+        %center
+          %h1 Pass complete!
+          %table{style: "font-size: 16pt; text-align:right"}
+            %tbody
+              %tr
+                %td Correct box contains:
+                %td#correctBoxInfo{style: "width: 70px"}
+              %tr
+                %td Time elapsed:
+                %td#elapsedTimeInfo
+              %tr
+                %td Retries:
+                %td#retriesInfo
+        %div{style: "margin-left: 50px"}
+          #retryInfoLink.action{onclick: "infoCard.hide();doAction( RETRY )", style: "margin-top:50px; margin-bottom: 10px", title: "Move cards from the 'incorrect' box back to the 'remaining' box"}
+            retry the cards in the incorrect box
+          .action{onclick: "infoCard.hide();doAction( START_OVER )", title: "Move all cards back to the 'remaining' box"} restart all cards
+
+:javascript
+  var stack = { name : "", description : "", "columnNames" : [ "Question","Answer"], 
+  "data" : [ 
+  ["Password", "A word, phrase, or string of characters that a user enters in order to authenticate his or her identity."],
+  ["Strong password", "A password that is difficult for others to guess."],
+  ["Parental controls", "Limitations that can be placed on a user account to prevent it from being used for certain activities or at certain times."],
+  ["Entertainment Software Ratings Board (ESRB)", "An organization that sets standards for content in video games and assigns ratings to games based on those standards."],
+  ["Biometric authentication", "A method of authenticating computer users that relies on physical characteristics of the person’s body."],
+  ["Malware", "Short for malicious software, a type of software designed to cause problems with the computer, such as a virus."],
+  ],"nextCardId" : "7",  "numCards" : "6"};
+  
+
+
+  var savedSessionData = '';  
+  var studyStackId = 131884; 
+

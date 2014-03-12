@@ -1,0 +1,22 @@
+- if (@leaf_data['path'] != "#")
+  .page-header
+    %h3
+      %small
+        = "#{@leaf_data['question']}"
+  .page-body#sim
+    %iframe{allowfullscreen: "", frameborder: "0", height: "#{@leaf_data['height']}", src: "#{@leaf_data['path']}", width: "#{@leaf_data['width']}", id:"sim"}
+    %input#c_type{:type => 'hidden', :value => "simulation"}
+-else
+  %h2.text-center
+    Coming soon......  
+
+:javascript
+  $(document).ready(function(){
+    $('#sim').contents() 
+    .find('embed')
+    .click(function(){
+       //Write your code here
+       alert("asdsd");
+    });
+  })
+  
