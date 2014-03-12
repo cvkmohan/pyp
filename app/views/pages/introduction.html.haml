@@ -1,25 +1,35 @@
 = stylesheet_link_tag 'grey'
 .row.clearfix
   .col-lg-12
-    .list-group
-      %a.list-group-item.active
-        %h3
-          About the Course
-      .list-group-item
+    .page-header
+      %h3#navbar 
         In this session you will learn about Maintaining Windows 7, with a focus on 
-        %strong Managing user accounts
-      .list-group-item
-        To begin with you will go through a set of three video lectures. Each video will be followed by a question that you have to answer, to proceed to the next video. At the end of the third video, you will be challenged to crack two simulated exercises.
-      .list-group-item
-        The session will end with a thought that you carry over beyond this session, and a summary of the session.
-      .list-group-item
-        When you are ready, click 
-        %a.text-warning{href: "/player"}
-          %strong 
-            \  Start learning  
-
-:css
-  h3, .h3 {
-    margin-bottom: 10.5px;
-    margin-top: 2px !important;
-  } 
+        %a{href: "/player"}
+          %span.text-warning
+            %strong Managing user accounts
+    .panel.panel-primary
+      / Default panel contents
+      .panel-heading Session Objectives 
+      .panel-body
+        %ol
+          %li Use create user accounts feature on Windows 7.
+          %li State the difference between standard and administrator user accounts and recommend their appropriate usage.
+          %li Manage user accounts - creating account passwords, changing passwords, and changing the account picture
+          %li
+            Set up parental controls like 
+            %ul
+              %li time limits on when  a user can use the computer
+              %li allow or block games by rating, content or title
+              %li allow or block any programs on the computer
+  .col-lg-6
+    .panel.panel-primary
+      / Default panel contents
+      .panel-heading Session Composition
+      .panel-body
+        %img{src: "/images/report.png"}
+  .col-lg-6            
+    .panel.panel-primary
+      / Default panel contents
+      .panel-heading Session Duration
+      .panel-body
+        Approx. 25 min. (This is the average time taken, it may vary from one user to another)

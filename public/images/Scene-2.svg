@@ -581,7 +581,7 @@
      x="669.03583"
      y="216.30836"
      inkscape:label="#rect3191"
-     onclick="window.open('http://localhost:3000/player');" />
+     onclick="window.open('http://localhost:3000/introduction');" />
   <rect
      style="opacity:0.01000001;fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      id="changing_system_settings"
