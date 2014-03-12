@@ -30,8 +30,8 @@
               "4": "Play music from the hard disk"
           },
       "words":"password",
-      "button_success": "Skip over to next challenge",
-      "button_error": "Watch video on setting a password for an account",
+      "button_success": "Skip over to next quiz",
+      "button_error": "Watch video on creating a password",
       "image_preview": "/images/Q1.svg"
     },
     {
@@ -60,8 +60,8 @@
               "4": "abcd"
           },
       "words":"password",
-      "button_success": "Skip over to next challenge",
-      "button_error": "Watch video on setting a password for an account",
+      "button_success": "Skip over to next quiz",
+      "button_error": "Watch video on Parental controls",
       "image_preview": "/images/Q1.svg"
     },
     {
@@ -96,26 +96,16 @@
     },
     {
       "id": "7",
-      "leaf_type": "video",
-      "name": "Video 3",
-      "title": "Parental Controls",
-      "path": "/videos/Parental_Control_new/Parental_Control.html",
-      "video_length": "ds",
-      "arabic":"",
-      "align": "right"
-    },
-    {
-      "id": "8",
       "leaf_type": "simulation",
       "name": "Challenge 1",
       "path": "/simulation/simulation_interaction/index.html",
       "video_length": "",
       "width": "900",
-      "height": "390",
+      "height": "375",
       "question": "Create a Standard Windows 7 account for Abbas and use the football picture (because Abbas is a big fan of football). Also set a password for Abbas's account."
     },
     {
-      "id": "9",
+      "id": "8",
       "leaf_type": "simulation",
       "name": "Challenge 2",
       "path": "/simulation/s1.html",
@@ -125,21 +115,19 @@
       "question": "Set time limit for Abbas to use his dad's laptop as 5 AM to 8 AM from Monday to Wednesday."
     },
     {
-      "id": "10",
-      "leaf_type": "flashcard",
-      "name": "Flashcards",
-      "cards": [
-          {
-              "q": "Planet Earth",
-              "a": "Planet Earth"
-          }
-      ]
-    },
-    {
-      "id": "11",
+      "id": "9",
       "leaf_type": "html",
       "name": "Think It Over",
-      "content": ""
+      "content": "",
+      "type": "think"
+    },
+    
+    {
+      "id": "10",
+      "leaf_type": "html",
+      "name": "Summary",
+      "content": "",
+      "type": "summary"
     }
   ]
 }

@@ -117,10 +117,14 @@ var Player = function(options){
     }else if(options.content_type == 'video'){
       //$("#prev").html("Previous");
       $("#lang_bar").show();
-      $("#next_p").html("Move on to next challenge <i class='fa fa-chevron-right'></i>");
+      $("#next_p").html("Proceed to quiz <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
       //$("#prev").attr("onclick", "playerObj.backToLeaf("+options.prev+")")
     }else if(options.content_type == 'info'){
+      $("#lang_bar").hide();
+      $("#next_p").html("Next <i class='fa fa-chevron-right'></i>");
+      $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
+    }else if(options.content_type == 'summary'){
       $("#lang_bar").hide();
       $("#next_p").html("Start again <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf(0)")
@@ -142,6 +146,8 @@ var Player = function(options){
         icon = "fa-puzzle-piece";
       }else if(vars.content_types[i] == "flashcards"){
         icon = "fa-bolt";
+      }else if(vars.content_types[i] == "summary"){
+        icon = "fa-list-alt";
       }else{
         icon = "fa-lightbulb-o";
       }

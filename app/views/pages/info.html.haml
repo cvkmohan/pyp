@@ -1,9 +1,7 @@
-%input#c_type{:type => 'hidden', :value => "info"}
+
 = stylesheet_link_tag 'docs'
-.bs-callout.bs-callout-info
-  %h4 Think It Over
-  %p
-    Each security measure you put in place has its drawbacks. For example, if you put a password on a Window account, you have to type the password each time you log in. And if you use a feature like Bitlocker on your hard drive, and your computer breaks down, you have to go through special procedures to be able to get the data off your hard drive.
-  %p
-    %i
-      Think about the differences in appropriate security level for different computer uses. What do you think is the appropriate balance between security and convenience for a home computer? For a computer used in the CEO’s office in a large company? For a computer that a military officer with a high security clearance uses?  For a computer used to store medical records in a physician’s office?    
+
+- if (@leaf_data['type'] == 'think')
+  = render 'thinkit' 
+- else
+  = render 'summary' 
