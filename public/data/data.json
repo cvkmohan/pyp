@@ -47,14 +47,22 @@
     {
       "id": "4",
       "leaf_type": "question",
-      "name": "Knowledge check 2",
+      "name": "Knowledge check 1",
       "question_type": "fb",
-      "q": "How can Abbas's dad allow Abbas to use his laptop and yet ensure his work is not lost?",
-      "correct": "By creating a standard account for Abbas",
-      "words": "create account",
+      "q": "Question: Which of the following is a strong password?",
+      "correct": "3",
+      "correct_option": "q7!t4za",
+      "options": 
+          {
+              "1": "password",
+              "2": "1234",
+              "3": "q7!t4za",
+              "4": "abcd"
+          },
+      "words":"password",
       "button_success": "Skip over to next challenge",
-      "button_error": "Watch video on creating a new account",
-      "image_preview": "/images/Q2.svg"
+      "button_error": "Watch video on setting a password for an account",
+      "image_preview": "/images/Q1.svg"
     },
     {
       "id": "5",
@@ -69,14 +77,22 @@
     {
       "id": "6",
       "leaf_type": "question",
-      "name": "Knowledge check 3",
+      "name": "Knowledge check 1",
       "question_type": "fb",
-      "q": "How can Abbas's dad control what Abbad gets access to on Windows 7?",
-      "correct": "By using parental controls",
-      "words": "parental control",
+      "q": "Question: Which of the following is not possible to do from the Parental Controls settings?",
+      "correct": "1",
+      "correct_option": "Set time limits on when a specific program can be used",
+      "options": 
+          {
+              "1": "Set time limits on when a specific program can be used",
+              "2": "Allow or block games with no rating",
+              "3": "Allow or block specific games",
+              "4": "Allow or block specific programs"
+          },
+      "words":"password",
       "button_success": "Skip over to next challenge",
-      "button_error": "Watch video on Parental controls",
-      "image_preview": "/images/Q3.svg"
+      "button_error": "Watch video on setting a password for an account",
+      "image_preview": "/images/Q1.svg"
     },
     {
       "id": "7",
@@ -92,10 +108,10 @@
       "id": "8",
       "leaf_type": "simulation",
       "name": "Challenge 1",
-      "path": "/simulation/s2/index.html",
+      "path": "/simulation/simulation_interaction/index.html",
       "video_length": "",
-      "width": "500",
-      "height": "360",
+      "width": "900",
+      "height": "390",
       "question": "Create a Standard Windows 7 account for Abbas and use the football picture (because Abbas is a big fan of football). Also set a password for Abbas's account."
     },
     {
