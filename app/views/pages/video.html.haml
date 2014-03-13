@@ -2,6 +2,7 @@
 = javascript_include_tag 'select2/select2'
 
 %input#c_type{:type => 'hidden', :value => "video"}
+%input#c_title{:type => 'hidden', :value => "#{@leaf_data['title']}"}
 - if (@leaf_data['path'] != "#")
   %iframe{id: "language" ,allowfullscreen: "", frameborder: "0", height: "450", mozallowfullscreen: "", src: "#{@leaf_data['path']}?title=0&byline=0&portrait=0", webkitallowfullscreen: "", width: "100%", align: "#{@leaf_data['align']}", scrolling: "no"}
 -else 

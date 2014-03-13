@@ -48,9 +48,11 @@ var Player = function(options){
       index_val = options.leaf_id;
       prev_index = ( index_val > 0 ) ? index_val - 1 : index_val;
       var c_type = $("#c_type").val();
+      var c_title = $("#c_title").val();
       
       p.navigation({
         content_type: c_type,
+        title:c_title,
         next: options.leaf_id +1,
         leaf_id: index_val
       });
@@ -105,29 +107,39 @@ var Player = function(options){
     if(options.content_type == 'question'){
       //$("#prev").html("Solve");
       $("#lang_bar").hide();
+      $("#leaf_title").html("<i class='fa fa-question-circle'></i>&nbsp;"+options.title);
       $("#next_p").html("Submit your answer <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.solve("+options.leaf_id+")")
       //$("#prev").attr("onclick", "playerObj.solve("+options.prev+")")
     }else if(options.content_type == 'video'){
       //$("#prev").html("Previous");
       $("#lang_bar").show();
+      $("#leaf_title").html("<i class='fa fa-play-circle'></i>&nbsp;"+options.title);
       $("#next_p").html("Proceed to Quiz <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
       //$("#prev").attr("onclick", "playerObj.backToLeaf("+options.prev+")")
     }else if(options.content_type == 'info'){
       $("#lang_bar").hide();
+
+      $("#leaf_title").html("<i class='fa fa-lightbulb-o'></i>&nbsp;"+options.title);
       $("#next_p").html("Proceed to session summary <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
     }else if(options.content_type == 'summary'){
       $("#lang_bar").hide();
+
+      $("#leaf_title").html("<i class='fa fa-list-alt'></i>&nbsp;"+options.title);
       $("#next_p").html("Start again <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf(0)")
     }else if(options.content_type == 'simulation2'){
       $("#lang_bar").hide();
+
+      $("#leaf_title").html("<i class='fa fa-puzzle-piece'></i>&nbsp;"+options.title);
       $("#next_p").html("Proceed to Think It Over <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
     }else{
       $("#lang_bar").hide();
+
+      $("#leaf_title").html("<i class='fa fa-puzzle-piece'></i>&nbsp;"+options.title);
       $("#next_p").html("Move on to next challenge <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
     }

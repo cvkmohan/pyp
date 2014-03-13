@@ -7,6 +7,7 @@
     %center
       %iframe{allowfullscreen: "", frameborder: "0", height: "#{@leaf_data['height']}", src: "#{@leaf_data['path']}", width: "#{@leaf_data['width']}", id:"sim", align: "#{@leaf_data['align']}"}
       %input#c_type{:type => 'hidden', :value => "#{@leaf_data['hidden_val']}"}
+      %input#c_title{:type => 'hidden', :value => "#{@leaf_data['name']}"}
 -else
   %h2.text-center
     = render "timeselection" 

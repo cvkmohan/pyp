@@ -9,6 +9,7 @@
       
     .page-body{style: "margin: 10px;"}
       %input#c_type{:type => 'hidden', :value => "question"}
+      %input#c_title{:type => 'hidden', :value => "#{@leaf_data['name']}"}
       .col-lg-10
         -(1..4).each do |i|
           .radio

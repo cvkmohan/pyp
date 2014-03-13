@@ -1,5 +1,6 @@
 .bs-callout.bs-callout-info
   %input#c_type{:type => 'hidden', :value => "info"}
+  %input#c_title{:type => 'hidden', :value => "#{@leaf_data['name']}"}
   %h4 Think It Over
   %p
     Each security measure you put in place has its drawbacks. For example, if you put a password on a Window account, you have to type the password each time you log in. And if you use a feature like Bitlocker on your hard drive, and your computer breaks down, you have to go through special procedures to be able to get the data off your hard drive.
