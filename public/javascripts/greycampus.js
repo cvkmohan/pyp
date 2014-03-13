@@ -72,7 +72,7 @@ var Player = function(options){
         +data.correct+'</div>';
 
         if(data.status == "true"){
-          message = "<strong>Well done!</strong>You got it right.";
+          message = "<strong>Well done! &nbsp;</strong>You got it right.";
           html = '<div class="alert alert-success">'+message+'</div>';
           $('#q_answer').html(html+html_solution);
 
@@ -81,7 +81,7 @@ var Player = function(options){
           $("#next_p").attr("onclick", "playerObj.nextLeaf("+next_index+")");
 
         }else{
-          message = "<strong>Sorry!</strong>That is not correct.";
+          message = "<strong>Sorry!&nbsp;</strong>That is not correct.";
           html = '<div class="alert alert-danger">'+message+'</div>';
           
           $('#q_answer').html(html+html_solution);
@@ -101,7 +101,7 @@ var Player = function(options){
   }
 
   this.navigation = function(options){
-    $("#next_p_v").hide();
+    //$("#next_p_v").hide();
     if(options.content_type == 'question'){
       //$("#prev").html("Solve");
       $("#lang_bar").hide();
@@ -111,7 +111,7 @@ var Player = function(options){
     }else if(options.content_type == 'video'){
       //$("#prev").html("Previous");
       $("#lang_bar").show();
-      $("#next_p").html("Proceed to quiz <i class='fa fa-chevron-right'></i>");
+      $("#next_p").html("Proceed to Quiz <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
       //$("#prev").attr("onclick", "playerObj.backToLeaf("+options.prev+")")
     }else if(options.content_type == 'info'){

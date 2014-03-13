@@ -102,7 +102,8 @@
       "video_length": "",
       "width": "900",
       "height": "375",
-      "question": "Create a Standard Windows 7 account for Abbas and use the football picture (because Abbas is a big fan of football). Also set a password for Abbas's account."
+      "align": "center",
+      "question": "Create a Standard Windows 7 account in the name of Abbas and set a football picture as the account picture"
     },
     {
       "id": "8",
@@ -112,7 +113,8 @@
       "video_length": "",
       "width": "870",
       "height": "370",
-      "question": "Set time limit for Abbas to use his dad's laptop as 5 AM to 8 AM from Monday to Wednesday."
+      "align": "left",
+      "question": "Set time limits for Abbas’s account as 5 AM to 8 AM from Monday to Wednesday"
     },
     {
       "id": "9",

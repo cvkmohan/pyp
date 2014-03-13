@@ -259,7 +259,7 @@
     <td style="text-align: right; padding-right: 12px;" colspan="2">
         <input type="button" name="Reset" value="Reset" onclick="reset()" class="btn btn-info"  />
         &nbsp;&nbsp;
-        <input type="button" name="Solve" value="Solve" onclick="solve()"  class="btn btn-primary"/>
+        <input type="button" name="Solve" value="Set time limits" onclick="solve()"  class="btn btn-primary"/>
     </td>
 </tr>
 
@@ -283,6 +283,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
 <script type="text/javascript">
+parent.navDisable();
 var given_data = ["2_6", "2_7", "2_8", "3_6", "3_7", "3_8", "4_6", "4_7", "4_8"]
 var selected_data = new Array();
 var diff_length = '0';
@@ -304,6 +305,7 @@ function reset(){
     $('.itemlist .ui-selected').removeClass('ui-selected')
     selected_data = [];
     diff_length = '';
+    atempt_count=[];
     $("#result").html('');
     //console.log(selected_data);
 
@@ -324,17 +326,16 @@ function solve(){
     atempt_count.push(1);
 
     if(diff_length > 0 ){
-        message = "<strong>OK! </strong>You are fumbling in setting up time limits for a user account.";
+        
+        message = "<strong>Sorry! </strong>That is incorrect. Please try again";
         html = "<div class='alert alert-danger'>"+message+"</div>";
         $("#result").html(html);
-    }else if(atempt_count <= 3){
+        parent.navDisable();
+    }else{
         message = "<strong>Good job! </strong>You know how to create a new account and set a password for it.";
         html = "<div class='alert alert-success'>"+message+"</div>"
         $("#result").html(html);
-    }else{
-        message = "<strong>OK! </strong>You are fumbling in setting up time limits for a user account.";
-        html = "<div class='alert alert-danger'>"+message+"</div>";
-        $("#result").html(html);
+        parent.navEnable();
     }
 }
 
