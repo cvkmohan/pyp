@@ -14,18 +14,25 @@ var p; // shortcut to reference prototypes
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(2798));
 
+	// Layer 5
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#0971D0").ss(5,1,1).p("EAq+AbWMhV7AAAMAAAg2rMBV7AAAg");
+	this.shape.setTransform(275,175);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).wait(2800));
+
 	// Layer 3 (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	mask.graphics.p("Eg+eAu4MAAAhduMB89AAAMAAABdug");
-	mask.setTransform(400,300);
+	mask.graphics.p("EgqXAbJMAAAg14MBVIAAAMAAAA14g");
+	mask.setTransform(273.8,173.7);
 
 	// Layer 6
 	this.instance = new lib.Charecter("synched",0);
-	this.instance.setTransform(735.5,529.6,0.662,0.662,0,0,180,-272.8,97.2);
+	this.instance.setTransform(507.2,320,0.423,0.423,0,0,180,-272.8,97.2);
 
 	this.instance_1 = new lib.Charecter1("synched",2);
-	this.instance_1.setTransform(735.5,529.6,0.662,0.662,0,0,180,-272.8,97.2);
+	this.instance_1.setTransform(507.2,320,0.423,0.423,0,0,180,-272.8,97.2);
 
 	this.instance.mask = this.instance_1.mask = mask;
 
@@ -33,15 +40,15 @@ var p; // shortcut to reference prototypes
 
 	// Layer 2
 	this.instance_2 = new lib.curser();
-	this.instance_2.setTransform(759.8,496.7,0.335,0.272,0,-30.3,-29.5,26.2,59.9);
+	this.instance_2.setTransform(579,407.6,0.285,0.232,0,-30.2,-29.5,26.1,59.5);
 
 	this.instance_2.mask = mask;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(39).to({x:485.7,y:152.4},25).wait(19).to({regX:26.1,regY:59.8,scaleX:0.27,scaleY:0.22,skewX:-30.1},2).to({regX:26.2,regY:59.9,scaleX:0.34,scaleY:0.27,skewX:-30.2},2).wait(101).to({x:496.3,y:310.7},25).wait(21).to({scaleX:0.27,scaleY:0.22,skewX:-30.1},2).to({scaleX:0.34,scaleY:0.27,skewX:-30.2},2).wait(20).to({x:164.4,y:159.7},25).wait(20).to({scaleX:0.27,scaleY:0.22,skewX:-30.1,x:164.3},2).to({scaleX:0.34,scaleY:0.27,skewX:-30.2,x:164.4},2).wait(22).to({x:562.2,y:365.9},24).wait(295).to({x:209.7,y:220.4},25).wait(15).to({regX:26.1,regY:59.8,scaleX:0.27,scaleY:0.22,skewX:-30.1},2).to({regX:26.2,regY:59.9,scaleX:0.34,scaleY:0.27,skewX:-30.2},2).wait(79).to({x:237.4,y:175.7},10).wait(5).to({x:252.2,y:192},0).to({regX:26.3,regY:60,scaleX:0.27,scaleY:0.22,skewX:-30.1,x:255.9,y:193.5},1).to({regX:26.2,regY:59.6,x:306.5,y:237.5},9).to({regY:59.9,x:362.4,y:286},10).wait(5).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26,x:370.2,y:310.4},0).wait(235).to({x:550.2,y:574.7},25).wait(15).to({regX:26.2,regY:59.6,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26},2).wait(21).to({x:540.5,y:549.5},0).to({x:199.7,y:253.1},16).wait(15).to({scaleX:0.26,scaleY:0.21},2).to({scaleX:0.32,scaleY:0.26},2).wait(12).to({x:198.6,y:270.8},0).to({x:524.8,y:304.4},14).wait(13).to({x:258.1,y:242.9},17).wait(16).to({regX:26.2,regY:60,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26},2).wait(15).to({x:265.7,y:256.9},0).to({x:632,y:278.5},16).wait(217).to({x:546.4,y:571.1},19).wait(10).to({regX:26.2,regY:59.6,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26},2).wait(4).to({x:308.4,y:326.1},18).wait(20).to({scaleX:0.26,scaleY:0.21},2).to({scaleX:0.32,scaleY:0.26},2).wait(46).to({x:543.4,y:574.7},14).wait(7).to({regX:26.2,regY:59.6,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26},2).wait(9).to({x:256.7,y:239.7},15).wait(24).to({regX:26.2,regY:59.6,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26},3).wait(10).to({x:632.7,y:390.7},14).wait(774).to({x:549.6,y:574.7},27).wait(13).to({regX:26.3,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,scaleX:0.32,scaleY:0.26},2).wait(11).to({x:543.4},0).to({x:288.4,y:287.7},16).wait(15).to({regX:26.3,scaleX:0.26,scaleY:0.21},2).to({regX:26.1,scaleX:0.32,scaleY:0.26},2).wait(22).to({x:177.9,y:148.1},19).wait(11).to({scaleX:0.26,scaleY:0.21},2).to({scaleX:0.32,scaleY:0.26},2).wait(48).to({x:167.2,y:227.9},11).wait(9).to({x:164.1,y:221.8},0).to({scaleX:0.26,scaleY:0.21,y:222.5},2).to({scaleX:0.32,scaleY:0.26,y:221.8},2).wait(9).to({x:409.6,y:461.1},16).wait(24).to({x:544.6,y:576.2},16).wait(15).to({regX:26.2,regY:60,scaleX:0.26,scaleY:0.21,y:576.3},2).to({regX:26.1,regY:59.8,scaleX:0.32,scaleY:0.26,y:576.2},2).wait(27));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(39).to({regX:26,regY:59.7,x:345.4,y:114.4},25).wait(19).to({regX:25.9,scaleX:0.23,scaleY:0.19},2).to({regX:26,scaleX:0.28,scaleY:0.23},2).wait(101).to({x:354.5,y:249.2},25).wait(21).to({regX:25.9,scaleX:0.23,scaleY:0.19},2).to({regX:26,scaleX:0.28,scaleY:0.23},2).wait(20).to({regX:25.9,regY:59.9,x:71.8,y:120.6},25).wait(20).to({regX:25.8,regY:60,scaleX:0.23,scaleY:0.19},2).to({regX:25.9,regY:59.9,scaleX:0.28,scaleY:0.23},2).wait(22).to({regY:59.4,x:410.6,y:296.2},24).wait(295).to({regX:26.1,regY:59.1,x:110.4,y:172.3},25).wait(15).to({regX:25.9,regY:59.7,scaleX:0.23,scaleY:0.19,y:172.2},2).to({regX:26.1,regY:59.1,scaleX:0.28,scaleY:0.23,y:172.3},2).wait(79).to({regX:26.3,regY:59.6,x:134.1,y:134.2},10).wait(5).to({regX:26.4,regY:59.7,x:146.6,y:148},0).to({regY:60.1,scaleX:0.23,scaleY:0.19,x:149.8,y:149.4},1).to({regX:26,regY:59.8,x:192.9,y:186.9},9).to({regX:26.5,regY:60.1,scaleY:0.19,x:240.5,y:228.2},10).wait(5).to({regX:25.9,regY:59.8,scaleX:0.27,scaleY:0.22,x:247.2,y:248.9},0).wait(235).to({regX:26,regY:59.6,x:400.4,y:474.1},25).wait(15).to({regX:25.9,regY:59.5,scaleX:0.22,scaleY:0.18},2).to({regX:26,regY:59.6,scaleX:0.27,scaleY:0.22},2).wait(21).to({regX:26.3,regY:59.8,x:392.2,y:452.6},0).to({regX:26.2,regY:59.7,x:101.9,y:200.1},16).wait(15).to({regX:25.9,regY:59.5,scaleX:0.22,scaleY:0.18},2).to({regX:26.2,regY:59.7,scaleX:0.27,scaleY:0.22},2).wait(12).to({regX:25.8,x:100.9,y:215.3},0).to({regX:26.4,regY:60.1,x:378.9,y:243.9},14).wait(13).to({regX:26.2,regY:59.7,x:151.7,y:191.4},17).wait(16).to({regY:60.1,scaleX:0.22,scaleY:0.18},2).to({regY:59.7,scaleX:0.27,scaleY:0.22},2).wait(15).to({regX:26.3,regY:59.8,x:158.1,y:203.4},0).to({regX:26,regY:59.6,x:470.1,y:221.7},16).wait(217).to({regX:26.2,regY:59.7,x:397.2,y:471},19).wait(10).to({regY:59.6,scaleX:0.22,scaleY:0.18},2).to({regY:59.7,scaleX:0.27,scaleY:0.22},2).wait(4).to({regX:26,regY:59.6,x:194.5,y:262.3},18).wait(20).to({regX:26.1,regY:59.3,scaleX:0.22,scaleY:0.18},2).to({regX:26,regY:59.6,scaleX:0.27,scaleY:0.22},2).wait(46).to({x:394.6,y:474.1},14).wait(7).to({regX:25.8,regY:59.4,scaleX:0.22,scaleY:0.18},2).to({regX:26,regY:59.6,scaleX:0.27,scaleY:0.22},2).wait(9).to({x:150.4,y:188.7},15).wait(24).to({regX:26.2,scaleX:0.22,scaleY:0.18},2).to({regX:26,scaleX:0.27,scaleY:0.22},3).wait(10).to({regX:26.2,regY:59.7,x:470.7,y:317.3},14).wait(774).to({x:399.9,y:474.1},27).wait(13).to({regX:26.3,regY:59.8,scaleX:0.22,scaleY:0.18},2).to({regX:26.2,regY:59.7,scaleX:0.27,scaleY:0.22},2).wait(11).to({regX:26,regY:59.6,x:394.6},0).to({regX:26.2,regY:59.7,x:177.5,y:229.6},16).wait(15).to({regX:26.9,regY:59.8,scaleX:0.22,scaleY:0.18},2).to({regX:26.2,regY:59.7,scaleX:0.27,scaleY:0.22},2).wait(22).to({regX:25.9,regY:60.1,x:83.3,y:110.8},19).wait(11).to({regX:26.1,regY:60.3,scaleX:0.22,scaleY:0.18,x:83.4},2).to({regX:25.9,regY:60.1,scaleX:0.27,scaleY:0.22,x:83.3},2).wait(48).to({regX:26.3,regY:59.8,x:74.3,y:178.7},11).wait(9).to({regX:26.5,regY:60.3,x:71.7,y:173.5},0).to({regX:26.2,regY:60.1,scaleX:0.22,scaleY:0.18,y:174.1},2).to({regX:26.5,regY:60.3,scaleX:0.27,scaleY:0.22,y:173.5},2).wait(9).to({regX:25.9,regY:59.3,x:280.7,y:377.3},16).wait(24).to({regX:26.1,regY:59.9,x:395.7,y:475.4},16).wait(15).to({regX:26.4,regY:60.1,scaleX:0.22,scaleY:0.18},2).to({regX:26.1,regY:59.9,scaleX:0.27,scaleY:0.22},2).wait(27));
 
 	// sc13.png
 	this.instance_3 = new lib._6("synched",0);
-	this.instance_3.setTransform(399.7,282);
+	this.instance_3.setTransform(272.2,224.7,0.852,0.852);
 	this.instance_3._off = true;
 
 	this.instance_3.mask = mask;
@@ -50,7 +57,7 @@ var p; // shortcut to reference prototypes
 
 	// sc18.png
 	this.instance_4 = new lib.sc18();
-	this.instance_4.setTransform(120.5,17.2,0.8,0.8);
+	this.instance_4.setTransform(34.4,-0.8,0.681,0.681);
 
 	this.instance_4.mask = mask;
 
@@ -58,7 +65,7 @@ var p; // shortcut to reference prototypes
 
 	// sc17.png
 	this.instance_5 = new lib.sc17();
-	this.instance_5.setTransform(120.5,17.2,0.8,0.8);
+	this.instance_5.setTransform(34.4,-0.8,0.681,0.681);
 
 	this.instance_5.mask = mask;
 
@@ -66,7 +73,7 @@ var p; // shortcut to reference prototypes
 
 	// sc16.png
 	this.instance_6 = new lib.sc16();
-	this.instance_6.setTransform(121.7,17.2,0.8,0.8);
+	this.instance_6.setTransform(35.5,-0.8,0.681,0.681);
 
 	this.instance_6.mask = mask;
 
@@ -74,7 +81,7 @@ var p; // shortcut to reference prototypes
 
 	// sc15.png
 	this.instance_7 = new lib.sc15();
-	this.instance_7.setTransform(121.7,17.2,0.8,0.8);
+	this.instance_7.setTransform(35.5,-0.8,0.681,0.681);
 
 	this.instance_7.mask = mask;
 
@@ -82,7 +89,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 8
 	this.instance_8 = new lib._6("synched",0);
-	this.instance_8.setTransform(400.9,282);
+	this.instance_8.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_8._off = true;
 
 	this.instance_8.mask = mask;
@@ -91,7 +98,7 @@ var p; // shortcut to reference prototypes
 
 	// sc12.png
 	this.instance_9 = new lib._12("synched",0);
-	this.instance_9.setTransform(401.3,303.6);
+	this.instance_9.setTransform(273.7,243.2,0.852,0.852);
 	this.instance_9._off = true;
 
 	this.instance_9.mask = mask;
@@ -100,7 +107,7 @@ var p; // shortcut to reference prototypes
 
 	// sc11.png
 	this.instance_10 = new lib._112("synched",0);
-	this.instance_10.setTransform(400.9,282);
+	this.instance_10.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_10._off = true;
 
 	this.instance_10.mask = mask;
@@ -109,7 +116,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 35
 	this.instance_11 = new lib._10("synched",0);
-	this.instance_11.setTransform(400.9,282);
+	this.instance_11.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_11._off = true;
 
 	this.instance_11.mask = mask;
@@ -118,7 +125,7 @@ var p; // shortcut to reference prototypes
 
 	// sc14.png
 	this.instance_12 = new lib.sc14();
-	this.instance_12.setTransform(120.5,17.2,0.8,0.8);
+	this.instance_12.setTransform(34.4,-0.8,0.681,0.681);
 
 	this.instance_12.mask = mask;
 
@@ -126,7 +133,7 @@ var p; // shortcut to reference prototypes
 
 	// sc13.png
 	this.instance_13 = new lib.sc13();
-	this.instance_13.setTransform(121.7,17.2,0.8,0.8);
+	this.instance_13.setTransform(35.5,-0.8,0.681,0.681);
 
 	this.instance_13.mask = mask;
 
@@ -134,7 +141,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 34
 	this.instance_14 = new lib._10("synched",0);
-	this.instance_14.setTransform(400.9,282);
+	this.instance_14.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_14._off = true;
 
 	this.instance_14.mask = mask;
@@ -143,7 +150,7 @@ var p; // shortcut to reference prototypes
 
 	// sc12.png
 	this.instance_15 = new lib._12("synched",0);
-	this.instance_15.setTransform(401.3,303.6);
+	this.instance_15.setTransform(273.7,243.2,0.852,0.852);
 	this.instance_15._off = true;
 
 	this.instance_15.mask = mask;
@@ -152,7 +159,7 @@ var p; // shortcut to reference prototypes
 
 	// sc11.png
 	this.instance_16 = new lib._112("synched",0);
-	this.instance_16.setTransform(400.9,282);
+	this.instance_16.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_16._off = true;
 
 	this.instance_16.mask = mask;
@@ -161,7 +168,7 @@ var p; // shortcut to reference prototypes
 
 	// sc10.png
 	this.instance_17 = new lib._10("synched",0);
-	this.instance_17.setTransform(400.9,282);
+	this.instance_17.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_17._off = true;
 
 	this.instance_17.mask = mask;
@@ -170,7 +177,7 @@ var p; // shortcut to reference prototypes
 
 	// sc9.png
 	this.instance_18 = new lib._9("synched",0);
-	this.instance_18.setTransform(400.9,282);
+	this.instance_18.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_18._off = true;
 
 	this.instance_18.mask = mask;
@@ -179,7 +186,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 25
 	this.instance_19 = new lib._6("synched",0);
-	this.instance_19.setTransform(400.9,282);
+	this.instance_19.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_19._off = true;
 
 	this.instance_19.mask = mask;
@@ -188,104 +195,104 @@ var p; // shortcut to reference prototypes
 
 	// Layer 27
 	this.instance_20 = new lib.sc81();
-	this.instance_20.setTransform(121.7,17.2,0.8,0.8);
+	this.instance_20.setTransform(35.5,-0.8,0.681,0.681);
 
 	this.instance_20.mask = mask;
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_20}]},808).to({state:[]},281).wait(1711));
 
 	// Layer 24
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(51,153,255,0.702)").s().p("AhOBMIAAiYICdAAIAACYg");
-	this.shape.setTransform(236.6,171.1);
-
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("rgba(51,153,255,0.702)").s().p("AhqBkIAAjHIDVAAIAADHg");
-	this.shape_1.setTransform(239.4,173.4);
+	this.shape_1.graphics.f("rgba(51,153,255,0.702)").s().p("AgyAxIAAhhIBlAAIAABhg");
+	this.shape_1.setTransform(133.4,130.3,1.331,1.331);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("rgba(51,153,255,0.702)").s().p("AiGB8IAAj3IENAAIAAD3g");
-	this.shape_2.setTransform(242.2,175.8);
+	this.shape_2.graphics.f("rgba(51,153,255,0.702)").s().p("AhaBVIAAipIC1AAIAACpg");
+	this.shape_2.setTransform(135.8,132.3);
 
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("rgba(51,153,255,0.702)").s().p("AiiCUIAAknIFFAAIAAEng");
-	this.shape_3.setTransform(245,178.2);
+	this.shape_3.graphics.f("rgba(51,153,255,0.702)").s().p("AhyBqIAAjTIDlAAIAADTg");
+	this.shape_3.setTransform(138.2,134.4);
 
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("rgba(51,153,255,0.702)").s().p("Ai+CsIAAlXIF9AAIAAFXg");
-	this.shape_4.setTransform(247.8,180.6);
+	this.shape_4.graphics.f("rgba(51,153,255,0.702)").s().p("AiKB+IAAj7IEVAAIAAD7g");
+	this.shape_4.setTransform(140.6,136.4);
 
 	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("rgba(51,153,255,0.702)").s().p("AjaDEIAAmHIG1AAIAAGHg");
-	this.shape_5.setTransform(250.6,183);
+	this.shape_5.graphics.f("rgba(51,153,255,0.702)").s().p("AihCTIAAklIFDAAIAAElg");
+	this.shape_5.setTransform(142.9,138.5);
 
 	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("rgba(51,153,255,0.702)").s().p("Aj2DcIAAm3IHtAAIAAG3g");
-	this.shape_6.setTransform(253.4,185.4);
+	this.shape_6.graphics.f("rgba(51,153,255,0.702)").s().p("Ai5CnIAAlNIFzAAIAAFNg");
+	this.shape_6.setTransform(145.3,140.5);
 
 	this.shape_7 = new cjs.Shape();
-	this.shape_7.graphics.f("rgba(51,153,255,0.702)").s().p("AkSD0IAAnnIIlAAIAAHng");
-	this.shape_7.setTransform(256.1,187.8);
+	this.shape_7.graphics.f("rgba(51,153,255,0.702)").s().p("AjRC8IAAl3IGjAAIAAF3g");
+	this.shape_7.setTransform(147.7,142.5);
 
 	this.shape_8 = new cjs.Shape();
-	this.shape_8.graphics.f("rgba(51,153,255,0.702)").s().p("AkuEMIAAoXIJdAAIAAIXg");
-	this.shape_8.setTransform(258.9,190.2);
+	this.shape_8.graphics.f("rgba(51,153,255,0.702)").s().p("AjpDQIAAmfIHTAAIAAGfg");
+	this.shape_8.setTransform(150.1,144.6);
 
 	this.shape_9 = new cjs.Shape();
-	this.shape_9.graphics.f("rgba(51,153,255,0.702)").s().p("AlJEkIAApHIKTAAIAAJHg");
-	this.shape_9.setTransform(261.7,192.6);
+	this.shape_9.graphics.f("rgba(51,153,255,0.702)").s().p("AkADlIAAnJIIBAAIAAHJg");
+	this.shape_9.setTransform(152.4,146.6);
 
 	this.shape_10 = new cjs.Shape();
-	this.shape_10.graphics.f("rgba(51,153,255,0.702)").s().p("AllE8IAAp3ILLAAIAAJ3g");
-	this.shape_10.setTransform(264.5,195);
+	this.shape_10.graphics.f("rgba(51,153,255,0.702)").s().p("AkYD5IAAnxIIxAAIAAHxg");
+	this.shape_10.setTransform(154.8,148.7);
 
 	this.shape_11 = new cjs.Shape();
-	this.shape_11.graphics.f("rgba(51,153,255,0.702)").s().p("AmBFUIAAqnIMDAAIAAKng");
-	this.shape_11.setTransform(267.3,197.4);
+	this.shape_11.graphics.f("rgba(51,153,255,0.702)").s().p("AkwENIAAoaIJhAAIAAIag");
+	this.shape_11.setTransform(157.2,150.7);
 
 	this.shape_12 = new cjs.Shape();
-	this.shape_12.graphics.f("rgba(51,153,255,0.702)").s().p("AmdFsIAArXIM7AAIAALXg");
-	this.shape_12.setTransform(270.1,199.8);
+	this.shape_12.graphics.f("rgba(51,153,255,0.702)").s().p("AlIEiIAApDIKRAAIAAJDg");
+	this.shape_12.setTransform(159.6,152.7);
 
 	this.shape_13 = new cjs.Shape();
-	this.shape_13.graphics.f("rgba(51,153,255,0.702)").s().p("Am5GEIAAsHINzAAIAAMHg");
-	this.shape_13.setTransform(272.9,202.2);
+	this.shape_13.graphics.f("rgba(51,153,255,0.702)").s().p("AlgE2IAAprILBAAIAAJrg");
+	this.shape_13.setTransform(161.9,154.8);
 
 	this.shape_14 = new cjs.Shape();
-	this.shape_14.graphics.f("rgba(51,153,255,0.702)").s().p("AnVGcIAAs3IOrAAIAAM3g");
-	this.shape_14.setTransform(275.7,204.6);
+	this.shape_14.graphics.f("rgba(51,153,255,0.702)").s().p("Al3FLIAAqVILvAAIAAKVg");
+	this.shape_14.setTransform(164.3,156.8);
 
 	this.shape_15 = new cjs.Shape();
-	this.shape_15.graphics.f("rgba(51,153,255,0.702)").s().p("AnxG0IAAtnIPjAAIAANng");
-	this.shape_15.setTransform(278.5,207);
+	this.shape_15.graphics.f("rgba(51,153,255,0.702)").s().p("AmPFfIAAq9IMfAAIAAK9g");
+	this.shape_15.setTransform(166.7,158.9);
 
 	this.shape_16 = new cjs.Shape();
-	this.shape_16.graphics.f("rgba(51,153,255,0.702)").s().p("AoNHMIAAuXIQbAAIAAOXg");
-	this.shape_16.setTransform(281.2,209.4);
+	this.shape_16.graphics.f("rgba(51,153,255,0.702)").s().p("AmnF0IAArnINPAAIAALng");
+	this.shape_16.setTransform(169.1,160.9);
 
 	this.shape_17 = new cjs.Shape();
-	this.shape_17.graphics.f("rgba(51,153,255,0.702)").s().p("AopHkIAAvHIRTAAIAAPHg");
-	this.shape_17.setTransform(284,211.8);
+	this.shape_17.graphics.f("rgba(51,153,255,0.702)").s().p("Am/GIIAAsPIN/AAIAAMPg");
+	this.shape_17.setTransform(171.4,162.9);
 
 	this.shape_18 = new cjs.Shape();
-	this.shape_18.graphics.f("rgba(51,153,255,0.702)").s().p("ApFH8IAAv3ISLAAIAAP3g");
-	this.shape_18.setTransform(286.8,214.2);
+	this.shape_18.graphics.f("rgba(51,153,255,0.702)").s().p("AnWGdIAAs5IOtAAIAAM5g");
+	this.shape_18.setTransform(173.8,165);
 
 	this.shape_19 = new cjs.Shape();
-	this.shape_19.graphics.f("rgba(51,153,255,0.702)").s().p("AphIUIAAwnITDAAIAAQng");
-	this.shape_19.setTransform(289.6,216.6);
+	this.shape_19.graphics.f("rgba(51,153,255,0.702)").s().p("AnuGxIAAthIPdAAIAANhg");
+	this.shape_19.setTransform(176.2,167);
 
 	this.shape_20 = new cjs.Shape();
-	this.shape_20.graphics.f("rgba(51,153,255,0.702)").s().p("Ap8IrIAAxVIT5AAIAARVg");
-	this.shape_20.setTransform(292.4,219,1,1.003);
+	this.shape_20.graphics.f("rgba(51,153,255,0.702)").s().p("AoGHGIAAuLIQNAAIAAOLg");
+	this.shape_20.setTransform(178.6,169.1);
 
-	this.shape.mask = this.shape_1.mask = this.shape_2.mask = this.shape_3.mask = this.shape_4.mask = this.shape_5.mask = this.shape_6.mask = this.shape_7.mask = this.shape_8.mask = this.shape_9.mask = this.shape_10.mask = this.shape_11.mask = this.shape_12.mask = this.shape_13.mask = this.shape_14.mask = this.shape_15.mask = this.shape_16.mask = this.shape_17.mask = this.shape_18.mask = this.shape_19.mask = this.shape_20.mask = mask;
+	this.shape_21 = new cjs.Shape();
+	this.shape_21.graphics.f("rgba(51,153,255,0.702)").s().p("AmXFkIAArHIMvAAIAALHg");
+	this.shape_21.setTransform(180.9,171.1,1.331,1.331);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape}]},786).to({state:[{t:this.shape_1}]},1).to({state:[{t:this.shape_2}]},1).to({state:[{t:this.shape_3}]},1).to({state:[{t:this.shape_4}]},1).to({state:[{t:this.shape_5}]},1).to({state:[{t:this.shape_6}]},1).to({state:[{t:this.shape_7}]},1).to({state:[{t:this.shape_8}]},1).to({state:[{t:this.shape_9}]},1).to({state:[{t:this.shape_10}]},1).to({state:[{t:this.shape_11}]},1).to({state:[{t:this.shape_12}]},1).to({state:[{t:this.shape_13}]},1).to({state:[{t:this.shape_14}]},1).to({state:[{t:this.shape_15}]},1).to({state:[{t:this.shape_16}]},1).to({state:[{t:this.shape_17}]},1).to({state:[{t:this.shape_18}]},1).to({state:[{t:this.shape_19}]},1).to({state:[{t:this.shape_20}]},1).to({state:[]},2).to({state:[]},281).wait(1711));
+	this.shape_1.mask = this.shape_2.mask = this.shape_3.mask = this.shape_4.mask = this.shape_5.mask = this.shape_6.mask = this.shape_7.mask = this.shape_8.mask = this.shape_9.mask = this.shape_10.mask = this.shape_11.mask = this.shape_12.mask = this.shape_13.mask = this.shape_14.mask = this.shape_15.mask = this.shape_16.mask = this.shape_17.mask = this.shape_18.mask = this.shape_19.mask = this.shape_20.mask = this.shape_21.mask = mask;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape_1}]},786).to({state:[{t:this.shape_2}]},1).to({state:[{t:this.shape_3}]},1).to({state:[{t:this.shape_4}]},1).to({state:[{t:this.shape_5}]},1).to({state:[{t:this.shape_6}]},1).to({state:[{t:this.shape_7}]},1).to({state:[{t:this.shape_8}]},1).to({state:[{t:this.shape_9}]},1).to({state:[{t:this.shape_10}]},1).to({state:[{t:this.shape_11}]},1).to({state:[{t:this.shape_12}]},1).to({state:[{t:this.shape_13}]},1).to({state:[{t:this.shape_14}]},1).to({state:[{t:this.shape_15}]},1).to({state:[{t:this.shape_16}]},1).to({state:[{t:this.shape_17}]},1).to({state:[{t:this.shape_18}]},1).to({state:[{t:this.shape_19}]},1).to({state:[{t:this.shape_20}]},1).to({state:[{t:this.shape_21}]},1).to({state:[]},2).to({state:[]},281).wait(1711));
 
 	// sc8.png
 	this.instance_21 = new lib._8("synched",0);
-	this.instance_21.setTransform(400.9,282);
+	this.instance_21.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_21._off = true;
 
 	this.instance_21.mask = mask;
@@ -294,7 +301,7 @@ var p; // shortcut to reference prototypes
 
 	// sc7.png
 	this.instance_22 = new lib._7("synched",0);
-	this.instance_22.setTransform(400.9,282);
+	this.instance_22.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_22._off = true;
 
 	this.instance_22.mask = mask;
@@ -303,7 +310,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 23
 	this.instance_23 = new lib.Blink();
-	this.instance_23.setTransform(245.5,280.6);
+	this.instance_23.setTransform(140.9,223.6,0.852,0.852);
 	this.instance_23._off = true;
 
 	this.instance_23.mask = mask;
@@ -312,7 +319,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 22
 	this.instance_24 = new lib.Blink();
-	this.instance_24.setTransform(245.5,248.5);
+	this.instance_24.setTransform(140.9,196.2,0.852,0.852);
 	this.instance_24._off = true;
 
 	this.instance_24.mask = mask;
@@ -321,7 +328,7 @@ var p; // shortcut to reference prototypes
 
 	// Layer 21
 	this.instance_25 = new lib.Blink();
-	this.instance_25.setTransform(245.5,213.4);
+	this.instance_25.setTransform(140.9,166.4,0.852,0.852);
 	this.instance_25._off = true;
 
 	this.instance_25.mask = mask;
@@ -330,7 +337,7 @@ var p; // shortcut to reference prototypes
 
 	// sc6.png
 	this.instance_26 = new lib._6("synched",0);
-	this.instance_26.setTransform(400.9,282);
+	this.instance_26.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_26._off = true;
 
 	this.instance_26.mask = mask;
@@ -339,7 +346,7 @@ var p; // shortcut to reference prototypes
 
 	// sc5.png
 	this.instance_27 = new lib._5("synched",0);
-	this.instance_27.setTransform(400.9,282);
+	this.instance_27.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_27._off = true;
 
 	this.instance_27.mask = mask;
@@ -348,7 +355,7 @@ var p; // shortcut to reference prototypes
 
 	// sc4.png
 	this.instance_28 = new lib._4("synched",0);
-	this.instance_28.setTransform(400.9,282);
+	this.instance_28.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_28._off = true;
 
 	this.instance_28.mask = mask;
@@ -357,7 +364,7 @@ var p; // shortcut to reference prototypes
 
 	// sc3.png
 	this.instance_29 = new lib._3("synched",0);
-	this.instance_29.setTransform(400.9,282);
+	this.instance_29.setTransform(273.3,224.7,0.852,0.852);
 	this.instance_29._off = true;
 
 	this.instance_29.mask = mask;
@@ -366,7 +373,7 @@ var p; // shortcut to reference prototypes
 
 	// sc2.png
 	this.instance_30 = new lib._2("synched",0);
-	this.instance_30.setTransform(401.3,303.6);
+	this.instance_30.setTransform(273.7,243.2,0.852,0.852);
 	this.instance_30._off = true;
 
 	this.instance_30.mask = mask;
@@ -375,7 +382,7 @@ var p; // shortcut to reference prototypes
 
 	// sc1.png
 	this.instance_31 = new lib._1_1("synched",0);
-	this.instance_31.setTransform(401.3,303.6);
+	this.instance_31.setTransform(273.7,243.2,0.852,0.852);
 
 	this.instance_31.mask = mask;
 
@@ -383,14 +390,14 @@ var p; // shortcut to reference prototypes
 
 	// Layer 1
 	this.instance_32 = new lib.sc1_1("synched",0);
-	this.instance_32.setTransform(379.2,299.9,0.667,0.667);
+	this.instance_32.setTransform(259.2,173,0.427,0.427);
 
 	this.instance_32.mask = mask;
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_32}]}).wait(2800));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-154.3,-0.2,1067.2,862.1);
+p.nominalBounds = new cjs.Rectangle(-82.3,-19.1,683,551.7);
 
 
 // symbols:
@@ -398,6 +405,12 @@ p.nominalBounds = new cjs.Rectangle(-154.3,-0.2,1067.2,862.1);
 	this.initialize(img._1);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1600,900);
+
+
+(lib.Bitmap22 = function() {
+	this.initialize(img.Bitmap22);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,538,347);
 
 
 (lib.sc1 = function() {

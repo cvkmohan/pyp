@@ -11,7 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require yeti/jquery-1.10.2.min
+//= require yeti/bootstrap.min
 //= require yeti/bootswatch
-//= require yeti/bsa
+
 
 

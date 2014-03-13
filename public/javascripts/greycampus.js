@@ -76,25 +76,19 @@ var Player = function(options){
           html = '<div class="alert alert-success">'+message+'</div>';
           $('#q_answer').html(html+html_solution);
 
-          next_index = index+2;
-          next_p_index = index+1;
+          next_index = index+1;
           $("#next_p").html(data.button_success+ "&nbsp;<i class='fa fa-chevron-right'></i>");
-          $("#next_p_v").show();
-          $("#next_p_v").html(data.button_error+ "&nbsp;<i class='fa fa-chevron-right'></i>");
-
-          $("#next_p_v").attr("onclick", "playerObj.nextLeaf("+next_p_index+")");
           $("#next_p").attr("onclick", "playerObj.nextLeaf("+next_index+")");
 
         }else{
-          $("#next_p_v").hide();
           message = "<strong>Sorry!</strong>That is not correct.";
           html = '<div class="alert alert-danger">'+message+'</div>';
           
           $('#q_answer').html(html+html_solution);
 
-          next_index = index+1;
-          $("#next_p").html(data.button_error+ "&nbsp;<i class='fa fa-chevron-right'></i>");
-          $("#next_p").attr("onclick", "playerObj.nextLeaf("+next_index+")");
+          prev_index = index-1;
+          $("#next_p").html("<i class='fa fa-chevron-left'></i>&nbsp;"+data.button_error);
+          $("#next_p").attr("onclick", "playerObj.nextLeaf("+prev_index+")");
         }
       },
       error: function(e) {
@@ -122,7 +116,7 @@ var Player = function(options){
       //$("#prev").attr("onclick", "playerObj.backToLeaf("+options.prev+")")
     }else if(options.content_type == 'info'){
       $("#lang_bar").hide();
-      $("#next_p").html("Next <i class='fa fa-chevron-right'></i>");
+      $("#next_p").html("Proceed to session summary <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
     }else if(options.content_type == 'summary'){
       $("#lang_bar").hide();
@@ -181,16 +175,28 @@ var Player = function(options){
       $("#"+id).removeClass('current');
     }
 
-    
     // if(leaf_id > 0){
     //   visited = leaf_id - 1;
     //   $("#sub_nav_"+visited).addClass('visited');
     // }
     $("#sub_nav_"+leaf_id+" span i ").removeClass('icon-color'); 
     $("#sub_nav_"+leaf_id).addClass('current');
+
+    if($("#sub_nav_"+leaf_id).is('.visited, .current')){
+      $("#sub_nav_"+leaf_id).addClass('current');
+      $("#sub_nav_"+leaf_id).removeClass('visited');
+    }
+
     $("#sub_nav_"+leaf_id).attr('onclick', "playerObj.play("+leaf_id+")");    
   }
 
 
   this.construct(options);
 }
+
+
+
+
+
+ 
+

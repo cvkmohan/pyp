@@ -6,28 +6,29 @@
 = javascript_include_tag 'jquery.stellar.min'
 = javascript_include_tag 'greycampus'
 .row
-  .col-xs-12.col-md-12 
-    .panel.panel-info
-      %ol.breadcrumb
-        %li
-          %a{href: "/"} 
-            Maintaining Windows 7
-        %li.active
-          Creating new user accounts
-        %span#lang_bar{style: "float:right"}
-          %select#lang{style: "width: 200px;"}
-            %option{value: 'english'} English
-            %option{value: 'arabic'} Arabic
-      .row
-        .col-md-12
-          .wizard#sub_nav
-      .row{style: "margin: 5px;"}
-        .col-md-12#player
-            
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        %ol.breadcrumb
+          %li
+            %a{href: "/"} 
+              Maintaining Windows 7
+          %li.active
+            Creating new user accounts
+          %span#lang_bar{style: "float:right"}
+            %select#lang{style: "width: 200px;"}
+              %option{value: 'english'} English
+              %option{value: 'arabic'} Arabic
+      .panel-body
+        .row
+          .col-md-12
+            .wizard#sub_nav
+        .row{style: "margin: 5px;"}
+          .col-md-12#player
       .panel-footer
         .row
           .col-md-12.text-right
-            %a.btn.btn-primary#next_p_v{style: "display:none"} Previous
+            /%a.btn.btn-primary#next_p_v{style: "display:none"} Previous
             %a.btn.btn-primary#next_p Move on to next challenge
   / .col-xs-6.col-md-4
   /   .panel.panel-info#sidebar
@@ -73,6 +74,14 @@
   /   content: "" !important;
   /   padding: 0 3px !important;
   / }
+  .breadcrumb {
+    border: 0 !important;
+    background-color: #F5F5F5;
+    border-radius: 0;
+    list-style: none outside none;
+    margin-bottom: -3px !important;
+    padding: 8px 15px;
+  }
 
 :javascript
   var playerObj = new Player({ 
@@ -81,4 +90,6 @@
     leaf_title: ['Video 1', 'Knowledge check 1','Video 1', 'Knowledge check 2','Video 2', 'Knowledge check 3','Challenge 1', 'Challenge 2', 'Think It Over', 'Summary'], 
   });
   playerObj.nextLeaf(0);
+
+
 

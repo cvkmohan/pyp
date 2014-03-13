@@ -1,0 +1,17 @@
+- if user_signed_in?
+  / %li
+  /   %a#help{}
+  /     %i.fa.fa-info.fa-2x
+  %li.dropdown
+    %a#download.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+      srinivasavarma.d@gmail.com
+      %span.caret
+    %ul.dropdown-menu{"aria-labelledby" => "download"}
+      %li
+        = link_to 'Edit account', edit_user_registration_path
+      %li
+        = link_to 'Logout', destroy_user_session_path, :method=>'delete'
+- else
+  %li
+    = link_to 'Login', new_user_session_path
+
