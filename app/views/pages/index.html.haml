@@ -1,14 +1,126 @@
 - if !current_user.nil?
   = javascript_include_tag 'jquery-2.1.0.min'
   = stylesheet_link_tag 'bootstrap-combined.min'
-  .row
-    .col-xs
-      .panel.panel-info
-        .panel-heading
-          %h3.panel-title 
-            Managing User Accounts
-        .panel-body#home
-          %embed{src: "/images/Index.svg", width: "100%"}
-        
-          
-         
+  = stylesheet_link_tag 'grey'
+  .row.clearfix
+    .col-lg-12
+      .col-lg-6
+        .page-header
+          %h3#navbar.text-primary 
+            Preparatory Year Program (PYP) Background
+        / Default panel contents
+        .bs-component
+          %p.lead
+            The Saudi Arabian Ministry of Education requires all newly admitted students to complete the Preparatory Year Program, which aims at preparing students for undergraduate study. The program provides students with the basic skills in English, Mathematics, Computer Studies, Health Education and Self Development.
+      .col-lg-6      
+        .page-header
+          %h3#navbar.text-primary 
+            GreyCampus approach to the PYP Computer Fundamentals program
+        / Default panel contents
+        .bs-component
+          %p.lead
+            Our approach to this PYP program is to offer a structured eLearning solution with a focus on learning-by-doing. We believe participative learning aided by interactive activities provides the most effective learning experience.    
+      .col-lg-12
+        .page-header
+          %h3#navbar.text-primary 
+            Course at a glance
+        / Default panel contents
+        .bs-component
+          %ul.list-unstyled
+            %li
+              %p.lead
+                Primary pedagogy – 
+                %i.fa.fa-play-circle
+                Video driven
+            %li
+              %p.lead
+                Assessments – 
+                %i.fa.fa-question-circle
+                Quizzes and 
+                %i.fa.fa-puzzle-piece
+                simulations 
+            %li
+              %p.lead
+                Language – 
+                %i.fa.fa-font
+                English
+            %li
+              %p.lead
+                Sub Titles – 
+                %i.fa.fa-comments
+                English, Arabic
+            %li
+              %p.lead
+                Composition
+
+            
+          .progress{style: "margin:10px;"}
+            .progress-bar.progress-bar-primary{style: "width: 30%;"}
+              %i.fa.fa-play-circle
+              %strong Video 
+            .progress-bar.progress-bar-danger{style: "width: 20%"}
+              %i.fa.fa-question-circle
+              %strong Quiz
+            .progress-bar.progress-bar-success{style: "width: 25%"}
+              %i.fa.fa-puzzle-piece
+              %strong Simulation
+            .progress-bar.progress-bar-warning{style: "width: 25%"}   
+              %i.fa.fa-file-text
+              %strong Other
+
+        .page-header
+          %h3#navbar.text-primary 
+            Course Syllabus
+        .panel.panel-primary
+          / Default panel contents
+          .panel-heading 
+          .panel-body
+            %h3#navbar.text-primary 
+              Part I: Computer Basics and Hardware
+            %ul.list-unstyled
+              %li
+                %strong 
+                  Chapter 1: Computer Basics
+              %li
+                %strong 
+                  Chapter 2: The System Unit
+              %li
+                %strong 
+                  Chapter 3: Input, Output, and Storage
+            %h3#navbar.text-primary 
+              Part II: Software
+            %ul.list-unstyled
+              %li
+                %strong 
+                  Chapter 4: Operating System Basics
+              %li
+                %strong 
+                  Chapter 5: Introduction to Windows 7
+              %li
+                %strong 
+                  %a{href: "/introduction"}
+                    Chapter 6: Maintaining Windows 7
+              %li
+                %strong 
+                  Chapter 7: Understanding Application Software
+              
+:css
+  .autumn {
+      background-image: url(/images/wavegrid.png);
+    }
+  .photo {
+      background-attachment: fixed;
+      background-position: 50% 0;
+      //background-repeat: no-repeat;
+      //height: 450px;
+      position: relative;
+    }
+
+  .progress {
+    background-color: #F6F6F6;
+    border: 1px solid #CCCCCC;
+    box-shadow: none;
+    height: 31px !important;
+    padding: 2px;
+  }   
+

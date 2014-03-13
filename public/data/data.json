@@ -69,9 +69,9 @@
       "leaf_type": "video",
       "name": "Video 3",
       "title":"Parental Controls",
-      "path": "/videos/parental_control/Parental_Control.html",
+      "path": "/captionbox/parental_controll.html",
       "video_length": "",
-      "arabic": "/captionbox/create_account_arabic.html", 
+      "arabic": "/captionbox/parental_controll_arabic.html", 
       "align": "left"
     },
     {
@@ -103,6 +103,7 @@
       "width": "900",
       "height": "375",
       "align": "center",
+      "hidden_val":"simulation1",
       "question": "Create a Standard Windows 7 account in the name of Abbas and set a football picture as the account picture"
     },
     {
@@ -113,7 +114,8 @@
       "video_length": "",
       "width": "870",
       "height": "370",
-      "align": "left",
+      "align": "center",
+      "hidden_val":"simulation2",
       "question": "Set time limits for Abbas’s account as 5 AM to 8 AM from Monday to Wednesday"
     },
     {

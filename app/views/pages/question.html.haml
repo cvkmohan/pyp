@@ -1,18 +1,21 @@
 /= @leaf_data
+%div{style: "padding-top: 20px;"}
 .bs-example
-  .page-header
-    %h2
-      %small
-        = @leaf_data['q']
-    
-  .page-body{style: "margin: 10px;"}
-    %input#c_type{:type => 'hidden', :value => "question"}
-    .col-lg-10
-      -(1..4).each do |i|
-        .radio
-          %label
-            %input#optionsRadios1{name: "optionsRadios", type: "radio", value: "#{i}"}/
-            %h4
-              = @leaf_data['options']["#{i}"]
-      %br
-      #q_answer
+  .col-lg-8
+    .page-header
+      %h2
+        %small
+          = @leaf_data['q']
+      
+    .page-body{style: "margin: 10px;"}
+      %input#c_type{:type => 'hidden', :value => "question"}
+      .col-lg-10
+        -(1..4).each do |i|
+          .radio
+            %label
+              %input#optionsRadios1{name: "optionsRadios", type: "radio", value: "#{i}"}/
+              %h4
+                = @leaf_data['options']["#{i}"]
+  .col-lg-4
+    %div{style: "padding-top: 40px;"}
+    #q_answer      

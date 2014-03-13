@@ -15,7 +15,7 @@
               Maintaining Windows 7
           %li.active
             Creating new user accounts
-          %span#lang_bar{style: "float:right"}
+          %span#lang_bar{style: "float:right;"}
             %select#lang{style: "width: 200px;"}
               %option{value: 'english'} English
               %option{value: 'arabic'} Arabic
@@ -25,11 +25,11 @@
             .wizard#sub_nav
         .row{style: "margin: 5px;"}
           .col-md-12#player
-      .panel-footer
-        .row
-          .col-md-12.text-right
-            /%a.btn.btn-primary#next_p_v{style: "display:none"} Previous
-            %a.btn.btn-primary#next_p Move on to next challenge
+      /.panel-footer
+      .row
+        .col-md-12.text-right
+          /%a.btn.btn-primary#next_p_v{style: "display:none"} Previous
+          %a.btn.btn-primary.btn-sm#next_p Move on to next challenge
   / .col-xs-6.col-md-4
   /   .panel.panel-info#sidebar
   /     .panel-heading
@@ -45,7 +45,7 @@
 
 :css
     #player {
-       min-height:400px;
+       min-height:450px;
     }
   #tree_scroll {
     height:350px;
@@ -81,8 +81,20 @@
     list-style: none outside none;
     margin-bottom: -3px !important;
     padding: 8px 15px;
+    text-transform: capitalize !important;
+    font-size:13px !important;
   }
 
+  .breadcrumb > li + li:before {
+    color: #999999;
+    content: "> " !important;
+    padding: 0 5px;
+  }
+
+
+  / .breadcrumb {
+  /   text-transform: "capitalize" !important;
+  / }
 :javascript
   var playerObj = new Player({ 
     total : '10', 

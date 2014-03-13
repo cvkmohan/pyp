@@ -122,6 +122,10 @@ var Player = function(options){
       $("#lang_bar").hide();
       $("#next_p").html("Start again <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf(0)")
+    }else if(options.content_type == 'simulation2'){
+      $("#lang_bar").hide();
+      $("#next_p").html("Proceed to Think It Over <i class='fa fa-chevron-right'></i>");
+      $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
     }else{
       $("#lang_bar").hide();
       $("#next_p").html("Move on to next challenge <i class='fa fa-chevron-right'></i>");
