@@ -6,6 +6,13 @@
   "leafs": [
     {
       "id": "1",
+      "leaf_type": "intro",
+      "name": "Introduction",
+      "content": "",
+      "type": "intro"
+    },
+    {
+      "id": "2",
       "leaf_type": "video",
       "name": "Video 1",
       "title":"Creating a user account",
@@ -15,7 +22,7 @@
       "align": "left"
     },
     {
-      "id": "2",
+      "id": "3",
       "leaf_type": "question",
       "name": "Knowledge check 1",
       "question_type": "fb",
@@ -35,7 +42,7 @@
       "image_preview": "/images/Q1.svg"
     },
     {
-      "id": "3",
+      "id": "4",
       "leaf_type": "video",
       "name": "Video 2",
       "title": "Creating a password for an account",
@@ -45,7 +52,7 @@
       "align": "left"
     },
     {
-      "id": "4",
+      "id": "5",
       "leaf_type": "question",
       "name": "Knowledge check 2",
       "question_type": "fb",
@@ -65,7 +72,7 @@
       "image_preview": "/images/Q1.svg"
     },
     {
-      "id": "5",
+      "id": "6",
       "leaf_type": "video",
       "name": "Video 3",
       "title":"Parental Controls",
@@ -75,7 +82,7 @@
       "align": "left"
     },
     {
-      "id": "6",
+      "id": "7",
       "leaf_type": "question",
       "name": "Knowledge check 3",
       "question_type": "fb",
@@ -95,7 +102,7 @@
       "image_preview": "/images/Q1.svg"
     },
     {
-      "id": "7",
+      "id": "8",
       "leaf_type": "simulation",
       "name": "Challenge 1",
       "path": "/simulation/simulation_interaction/index.html",
@@ -107,7 +114,7 @@
       "question": "Create a Standard Windows 7 account in the name of Abbas and set a football picture as the account picture"
     },
     {
-      "id": "8",
+      "id": "9",
       "leaf_type": "simulation",
       "name": "Challenge 2",
       "path": "/simulation/s1.html",
@@ -119,7 +126,7 @@
       "question": "Set time limits for Abbas’s account as 5 AM to 8 AM from Monday to Wednesday"
     },
     {
-      "id": "9",
+      "id": "10",
       "leaf_type": "html",
       "name": "Think It Over",
       "content": "",
@@ -127,7 +134,7 @@
     },
     
     {
-      "id": "10",
+      "id": "11",
       "leaf_type": "html",
       "name": "Summary",
       "content": "",

@@ -16,7 +16,6 @@
           %li.active
             Creating new user accounts
           %li#leaf_title
-            zczdsa  
           %span#lang_bar{style: "float:right;"}
             %select#lang{style: "width: 200px;"}
               %option{value: 'english'} English
@@ -98,21 +97,25 @@
   /   text-transform: "capitalize" !important;
   / }
 :javascript
-  var playerObj = new Player({ 
-    total : '10', 
-    content_types: ['video', 'question','video', 'question','video', 'question','simulation', 'simulation', 'info', 'summary'],
-    leaf_title: ['Video 1', 'Knowledge check 1','Video 1', 'Knowledge check 2','Video 2', 'Knowledge check 3','Challenge 1', 'Challenge 2', 'Think It Over', 'Summary'], 
-  });
-  playerObj.nextLeaf(0);
+  
 
-  function navEnable()
-  {
-    $("#next_p").show();
-  }
-  function navDisable()
-  {
-    $("#next_p").hide();
-  }
+  
+    var playerObj = new Player({ 
+      total : '11', 
+      content_types: ['intro', 'video', 'question','video', 'question','video', 'question','simulation', 'simulation', 'info', 'summary'],
+      leaf_title: ['Video 1', 'Knowledge check 1','Video 1', 'Knowledge check 2','Video 2', 'Knowledge check 3','Challenge 1', 'Challenge 2', 'Think It Over', 'Summary'], 
+    });
+    playerObj.nextLeaf(0);
+
+    function navEnable()
+    {
+      $("#next_p").show();
+    }
+    function navDisable()
+    {
+      $("#next_p").hide();
+    }
+  
 
 
 

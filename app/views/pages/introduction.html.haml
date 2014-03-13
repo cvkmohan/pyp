@@ -1,38 +1,38 @@
+%input#c_type{:type => 'hidden', :value => "#{@leaf_data['type']}"}
+%input#c_title{:type => 'hidden', :value => "#{@leaf_data['name']}"}
+
 = stylesheet_link_tag 'grey'
 .row.clearfix
   .col-lg-12
     .page-header
       %h3#navbar 
         In this session you will learn about Maintaining Windows 7, with a focus on 
-        %a{href: "/player", data: "no_turbolink: true"}
+        %a
           %span.text-warning
             %strong Managing user accounts
-    .panel.panel-primary
-      / Default panel contents
-      .panel-heading Session Objectives 
-      .panel-body
-        %ol
-          %li Use create user accounts feature on Windows 7.
-          %li State the difference between standard and administrator user accounts and recommend their appropriate usage.
-          %li Manage user accounts - creating account passwords, changing passwords, and changing the account picture
-          %li
-            Set up parental controls like 
-            %ul
-              %li time limits on when  a user can use the computer
-              %li allow or block games by rating, content or title
-              %li allow or block any programs on the computer
-  .col-lg-6
-    .panel.panel-primary
-      / Default panel contents
-      .panel-heading Session Composition
-      .panel-body
-        %img{src: "/images/report.png"}
-  .col-lg-6            
-    .panel.panel-primary
-      / Default panel contents
-      .panel-heading Session Duration
-      .panel-body
-        Approx. 25 min. (This is the average time taken, it may vary from one user to another)
-        %br
-        %p.text-center
-          %a.btn.btn-warning{href: "/player", data: "no_turbolink: true"} Start Course
+  .row
+    .col-lg-6
+      .panel.panel-primary
+        / Default panel contents
+        .panel-heading Session Objectives 
+        .panel-body
+          %ol
+            %li Use create user accounts feature on Windows 7.
+            %li State the difference between standard and administrator user accounts and recommend their appropriate usage.
+            %li Manage user accounts - creating account passwords, changing passwords, and changing the account picture
+            %li
+              Set up parental controls like 
+              %ul
+                %li time limits on when  a user can use the computer
+                %li allow or block games by rating, content or title
+                %li allow or block any programs on the computer
+    .col-lg-6
+      .panel.panel-primary
+        / Default panel contents
+        .panel-heading Session Composition
+        .panel-body
+          %img{src: "/images/report.png"}
+    
+  %p.text-center.text-primary
+    Approx. 25 min. (This is the average time taken, it may vary from one user to another)
+          

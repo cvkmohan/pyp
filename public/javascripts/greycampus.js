@@ -136,6 +136,12 @@ var Player = function(options){
       $("#leaf_title").html("<i class='fa fa-puzzle-piece'></i>&nbsp;"+options.title);
       $("#next_p").html("Proceed to Think It Over <i class='fa fa-chevron-right'></i>");
       $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
+    }else if(options.content_type == 'intro'){
+      $("#lang_bar").hide();
+
+      $("#leaf_title").html("<i class='fa fa-list-alt'></i>&nbsp;"+options.title);
+      $("#next_p").html("Start Course <i class='fa fa-chevron-right'></i>");
+      $("#next_p").attr("onclick", "playerObj.nextLeaf("+options.next+")")
     }else{
       $("#lang_bar").hide();
 
@@ -157,6 +163,8 @@ var Player = function(options){
       }else if(vars.content_types[i] == "flashcards"){
         icon = "fa-bolt";
       }else if(vars.content_types[i] == "summary"){
+        icon = "fa-list-alt";
+      }else if(vars.content_types[i] == "intro"){
         icon = "fa-list-alt";
       }else{
         icon = "fa-lightbulb-o";

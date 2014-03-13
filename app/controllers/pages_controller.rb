@@ -17,7 +17,7 @@ class PagesController < ApplicationController
     leaf_id = params[:id].to_i;
     leaf_json = parse_json
     @leaf_data = leaf_json['leafs'][leaf_id]
-
+    
     file = case @leaf_data['leaf_type']
       when 'question'
         'question'
@@ -26,7 +26,9 @@ class PagesController < ApplicationController
       when 'flashcard'
         'flashcard'
       when 'simulation'
-        'simulation'  
+        'simulation'
+      when 'intro'
+        'introduction'     
       else
         'info'           
       end
